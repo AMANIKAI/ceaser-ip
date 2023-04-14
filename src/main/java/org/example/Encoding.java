@@ -1,6 +1,14 @@
 package org.example;
 
 public class Encoding {
+    public static String getAlphabets() {
+        return alphabets;
+    }
+
+    public static void setAlphabets(String alphabets) {
+        Encoding.alphabets = alphabets;
+    }
+
     private static String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     public static String encode(String msg, int key){

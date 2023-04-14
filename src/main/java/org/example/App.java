@@ -8,7 +8,7 @@ public class App {
         Scanner userInputObject = new Scanner(System.in);
 
         do {
-            System.out.println("Select the Process: (e-encode/d-decode:");
+            System.out.println("Select the Process: (e-encode/d-decode:)");
             String process = userInputObject.nextLine();
 
             System.out.println("Enter Your Message:");

@@ -1,6 +1,14 @@
 package org.example;
 
 public class Decoding {
+    public static String getDecodeAlphabets() {
+        return decodeAlphabets;
+    }
+
+    public static void setDecodeAlphabets(String decodeAlphabets) {
+        Decoding.decodeAlphabets = decodeAlphabets;
+    }
+
     private static String decodeAlphabets = "XYZABCDEFGHIJKLMNOPQRSTUVW";
 
     public static String decode(String msg, int key){
