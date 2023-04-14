@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner userInputObject = new Scanner(System.in);
-//        Console console = new Console();
+
         do {
             System.out.println("Select process (e-encode/d-decode:");
             String process = userInputObject.nextLine();
