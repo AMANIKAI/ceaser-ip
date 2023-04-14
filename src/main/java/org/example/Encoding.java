@@ -11,7 +11,7 @@ public class Encoding {
 
     private static String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    public static String encode(String msg, int key){
+    public static final String encode(String msg, int key){
         String output = "";
         for(char c: msg.toCharArray()){
             int charPos = alphabets.indexOf(c);
