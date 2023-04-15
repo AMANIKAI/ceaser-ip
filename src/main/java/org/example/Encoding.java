@@ -1,29 +1,21 @@
 package org.example;
 
 public class Encoding {
-    public static String getAlphabets() {
-        return alphabets;
-    }
+    private static final String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    public static void setAlphabets(String alphabets) {
-        Encoding.alphabets = alphabets;
-    }
-
-    private static String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    public static final String encode(String msg, int key){
-        String output = "";
+    public static String encode(String msg, int key){
+        StringBuilder output = new StringBuilder();
         for(char c: msg.toCharArray()){
             int charPos = alphabets.indexOf(c);
             if (charPos == -1){
-                output = output + c;
+                output.append(c);
                 continue;
             }
             int tempNewPos = charPos + key;
             int newPos = tempNewPos > 25 ?  tempNewPos % 26 : tempNewPos;
             char replacement = alphabets.charAt(newPos);
-            output = output + replacement;
+            output.append(replacement);
         }
-        return output;
+        return output.toString();
     }
 }
