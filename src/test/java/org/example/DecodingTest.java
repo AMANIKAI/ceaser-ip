@@ -10,7 +10,7 @@ class DecodingTest {
     @Test
     @DisplayName("Testing Decoding Program")
     void decode() {
-        assertEquals("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", Decoding.decode("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", 3));
-        assertEquals("Y@#", Decoding.decode("X@#", 1));
+        assertEquals("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", Decoding.decode("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", 23));
+        assertEquals("B@#", Decoding.decode("A@#", -1));
     }
 }
