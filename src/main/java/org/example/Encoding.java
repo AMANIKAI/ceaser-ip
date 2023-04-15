@@ -1,5 +1,4 @@
 package org.example;
-
 public class Encoding {
     private static final String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
