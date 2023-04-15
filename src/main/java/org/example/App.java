@@ -1,6 +1,5 @@
 package org.example;
 
-
 import java.util.Scanner;
 
 public class App {
@@ -37,7 +36,7 @@ public class App {
         App mainObject = new App();
 
         do {
-            System.out.println("Select the Process: (e-encode/d-decode:");
+            System.out.println("Select the Process: (e-encode/d-decode:)");
             mainObject.setProcess(userInputObject.nextLine());
 
             System.out.println("Enter Your Message:for Encoding; THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n" +
